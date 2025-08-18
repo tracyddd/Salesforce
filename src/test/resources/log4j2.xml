@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!-- Define log file location -->
+    <Properties>
+        <Property name="basePath">./log</Property>
+    </Properties>
+    <!-- Define log level -->
+    <Appenders>
+        <!-- Rolling file for app.log with daily rollover and size limit
+        -->
+        <!--<RollingFile name="RollingFile" fileName="${basePath}/app.log" filePattern="${basePath}/app-%d{yyyy-MM-dd}.log">
+          <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c{1} -%msg%n"/>
+          <Policies>
+         -->
+        <!-- Daily rollover and size-based rollover -->
+        <!--         <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+               <SizeBasedTriggeringPolicy size="100 KB"/>
+           </Policies>
+       </RollingFile>
+        -->
+        <!-- Static file output for logs/app.log -->
+        <!--   <File name="SimpleFile" fileName="${basePath}/app.log">
+               <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+           </File>
+        -->
+        <!-- Console Output -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File appender for report.log -->
+        <!--   <File name="ReportFile" fileName="${basePath}/report.log" append="true">
+             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %c{1} - %msg%n"/>
+         </File>
+         -->
+    </Appenders>
+
+    <!-- Logger configuration //trace、debug、info、warn、error、fatal, trace is the lowest level which will log all level of the activities log info -->
+    <Loggers>
+        <!-- Root Logger Configuration with level="trace" -->
+        <Root level="error">
+            <AppenderRef ref="Console"/>
+            <!--     <Logger name="letskodeit" level="info" additivity="false"><AppenderRef ref="File"/>
+               </Logger>
+               <AppenderRef ref="RollingFile"/>
+               <Logger name="demo" level="debug" additivity="false"><AppenderRef ref="File"/>
+               </Logger>
+               <AppenderRef ref="SimpleFile"/>
+               <AppenderRef ref="ReportFile"/> -->
+        </Root>
+    </Loggers>
+</Configuration>

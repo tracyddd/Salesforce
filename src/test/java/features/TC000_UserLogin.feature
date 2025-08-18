@@ -1,36 +1,26 @@
 Feature: Login Testing
 
-# @Test
-# Scenario Outline: Search product in Home/Landing Page to validate if it matches in ProductName Column from feature file
-#   Given User open Salesforce Homepage
-#   When User input Username <Username> and Password <Password> to login Salesforce Homepage
-#   Then Validate user login successfully
-#   Examples:
-#     |Username  | Password |
-#     |"tracychrishu@mindful-unicorn-apdgty.com"| "Luckygirl.1"     |
+  @Login
+ Scenario Outline: Search product in Home/Landing Page to validate if it matches in ProductName Column from feature file
+   Given User open Salesforce Homepage
+   When User input Username "<Username>" and Password "<Password>" to login Salesforce Homepage
+   Then Validate user login successfully
+   Examples:
+     |Username  | Password |
+     |tracychrishu@mindful-unicorn-apdgty.com| Luckygirl.1     |
 
-
-# @Test
-# Scenario Outline: Create an new account
-#   Given User click on Account button from top menu bar
-#   When User click on New button
-#   Then Select Client Radio and Next button
-#   And Input AccountName "<AccountName>" to create a new account
-#   Examples:
-#     |AccountName  |
-#     |Jane  |
 
   @regression
   Scenario Outline: Create an new test
     Given User is on GreenKart landing page
     When User searched with shortname <Name> and extracted actual name of product
-    Then User searched for shortname <Name> in offers page
+    Then User searched for shortname "<Name>" in offers page
     And Validate product name in offers page matches with Landing page
     Examples:
       |Name  |
-      |"Tom"|
-      |"Ban"|
-      |"Beet"|
+      |Tom|
+      |Ban|
+      |Beet|
 
  # @regression @smoke
  #  Scenario: Open the GreenKart webpage, and I can find broccoli and apple carrot listed on the page.
