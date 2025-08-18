@@ -7,7 +7,7 @@ Feature: Login Testing
 #   Then Validate user login successfully
 #   Examples:
 #     |Username  | Password |
-#     |"tracychrishu@mindful-unicorn-apdgty.com"| "Luckygirl.1"     |
+#     |"tracychrishu@mindful-unicorn-apdgty.com"| "password"     |
 
 
 # @Test
