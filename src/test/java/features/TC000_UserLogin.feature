@@ -7,13 +7,18 @@ Feature: Login Testing
    Then Validate user login successfully
    Examples:
      |Username  | Password |
-     |tracychrishu@mindful-unicorn-apdgty.com| Luckygirl.1     |
+     |tracychrishu@mindful-unicorn-apdgty.com| asdfgh@1     |
+
+  @AdminLogin @Test
+  Scenario: Admin login Salesforce Homepage
+    Given User open Salesforce Homepage
+    When User input admin username and admin password
+    Then Validate user login successfully
 
 
   @regression
-  Scenario Outline: Create an new test
-    Given User is on GreenKart landing page
-    When User searched with shortname <Name> and extracted actual name of product
+  Scenario Outline: Admin login Salesforce Homepage
+    Given User open Salesforce Homepage
     Then User searched for shortname "<Name>" in offers page
     And Validate product name in offers page matches with Landing page
     Examples:

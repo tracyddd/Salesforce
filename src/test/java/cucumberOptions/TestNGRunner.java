@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(features ={"src/test/java/features"},
-        tags="@Login",  // tags="not @Regression"
+        tags="@Login",  // tags="not @Regression" //tags = "@AdminLogin and @Test"
         glue= {"stepDefinitions"},
         monochrome = true,
         plugin = {"pretty",

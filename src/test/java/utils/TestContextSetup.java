@@ -1,5 +1,7 @@
 package utils;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,6 +10,10 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import pageObjects.LoginPage;
+
 import java.time.Duration;
 import java.util.Arrays;
 
@@ -62,7 +68,33 @@ public class TestContextSetup {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 
-
     }
+
+    /* // considering to add setUp() method for user login
+    public void userLoginSalesforceHomepage() {
+        // No need to initialize the driver here, as it is already provided by TestContextSetup
+        // use ConfigReader to read QAUrl
+        ConfigReader configReader = new ConfigReader();
+        String url = configReader.getProperty("QAUrl");
+        driver.get(url);
+
+        String Username = configReader.getProperty("AdminUserName");
+        String Password = configReader.getProperty("AdminPassword");
+
+        // Using JavaScript Executor to wai username and password fields to be visible
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        new WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
+        new WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
+
+        // Code to input username and password and login to Salesforce Homepage
+        LoginPage homePage = new LoginPage(driver); // Pass the existing driver
+        homePage.InputUsername(Username);
+        homePage.InputPassword(Password);
+        homePage.clickLoginButton();
+    }
+     */
+
 
 }

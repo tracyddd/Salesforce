@@ -924,3 +924,65 @@
 2025-08-17 16:00:07 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
 2025-08-17 16:00:15 [main] INFO  utils.Log - Log: The user login successfully in Salesforce Homepage
 2025-08-17 16:00:15 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 11:40:50 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 11:40:50 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 11:41:14 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 11:41:58 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 11:41:58 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 11:42:09 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 11:42:09 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 11:42:09 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 11:42:35 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 11:42:54 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 11:42:54 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 11:43:00 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 11:48:36 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 11:48:36 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 11:48:40 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 11:51:04 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 11:51:04 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 11:51:13 [main] INFO  utils.Log - Log: The user login successfully in Salesforce Homepage
+2025-08-19 11:51:13 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 12:49:18 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 12:49:18 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 12:49:27 [main] INFO  utils.Log - Log: The user login successfully in Salesforce Homepage
+2025-08-19 12:49:27 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 12:49:28 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 12:49:28 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 12:49:44 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 12:51:14 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 12:51:14 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 12:51:21 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 12:51:22 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 12:51:22 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 12:51:37 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 12:54:20 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 12:54:20 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 12:54:28 [main] INFO  utils.Log - Log: The user login successfully in Salesforce Homepage
+2025-08-19 12:54:28 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 12:54:28 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 12:54:28 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 12:54:47 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 13:03:37 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 13:03:37 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 13:03:42 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 13:03:42 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 13:03:42 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 13:03:47 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 13:04:29 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 13:04:29 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 13:04:33 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 13:04:33 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 13:04:33 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 13:04:39 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 13:27:33 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 13:27:33 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 13:27:40 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 13:36:33 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 13:36:33 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 13:36:44 [main] INFO  utils.Log - Log: The user login successfully in Salesforce Homepage
+2025-08-19 13:36:44 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
+2025-08-19 13:37:33 [main] INFO  stepDefinitions.Hooks - Log4j is initialized in Hooks
+2025-08-19 13:37:33 [main] INFO  stepDefinitions.Hooks.Log - This is a test log message from Hooks to confirm Log4j is working.
+2025-08-19 13:37:42 [main] INFO  utils.Log - Log: The user login successfully in Salesforce Homepage
+2025-08-19 13:37:42 [main] INFO  stepDefinitions.Hooks.ReporterLogger - hooks ReporterLogger - all : Clear the entries for all databases
