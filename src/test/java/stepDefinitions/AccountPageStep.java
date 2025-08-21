@@ -28,16 +28,13 @@ public class AccountPageStep extends utils.Utilities {
         this.driver = testContextSetup.driver;  // Use the driver from TestContextSetup
     }
 
-    @Given("User click on Account button from top menu bar")
-    public void userClickOnAccountButtonFromTopMenuBar() throws InterruptedException {
+    @Given("Redirect to Account Page")
+    public void RedirectToAccountPage() throws InterruptedException {
 
         Thread.sleep(5000);
         String baseUrl = new ConfigReader().getProperty("BaseUrl");
         String allaccountlink= baseUrl + "/lightning/o/Account/list?filterName=RecentlyViewedAccounts";
-        System.out.println("this is the full link: "+allaccountlink);
         driver.get(allaccountlink);
-
-
         Thread.sleep(5000);
 
         //    new AccountPage(driver).clickAccountButton();
@@ -56,7 +53,7 @@ public class AccountPageStep extends utils.Utilities {
 
     }
 
-    @When("User click on New button")
+    @When("User click on New button from Account Page")
     public void userClickOnNewButton() {
         new AccountPage(driver).userClickOnNewButton();
     }

@@ -43,7 +43,7 @@ public class TestContextSetup {
                 // configure options parameter to Chrome driver
                 driver = new ChromeDriver(op);
 
-                /* setup Proxy
+                /* Here you can setup Proxy for the browser
                 //Proxy proxy=new Proxy();
                 //proxy.setHttpProxy("username","password");
                 //options.setCapability("proxy", proxy);  */
@@ -69,6 +69,10 @@ public class TestContextSetup {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 
     }
+        public static void redirectToSalesforceHomepage() {
+            String baseUrl = driver.getCurrentUrl();
+            driver.get(baseUrl + "/lightning/page/home");
+        }
 
     /* // considering to add setUp() method for user login
     public void userLoginSalesforceHomepage() {

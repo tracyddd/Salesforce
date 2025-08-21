@@ -66,20 +66,22 @@ public class LoginPageStep {
     }
 
     @Then("Validate user login successfully")
-    public void validateUserLoginSuccessfully() {
+    public void validateUserLoginSuccessfully() throws InterruptedException {
         // use ConfigReader to read QAUrl
         ConfigReader configReader = new ConfigReader();
         String baseUrl = configReader.getProperty("BaseUrl");
         driver.get(baseUrl);
 
+        testContextSetup.redirectToSalesforceHomepage();
         String currentURL=driver.getCurrentUrl();
+
 
         // exact same URL as expected
         //  Assert.assertEquals(currentURL, baseUrl+"/lightning/page/home", "User is not logged in successfully");
 
         // Assert that the current URL contains the expected base URL
         // This is a more flexible check, allowing for variations in the URL
-       Assert.assertTrue(driver.getCurrentUrl().contains(baseUrl), "User is not logged in successfully");
+       Assert.assertTrue(currentURL.contains(baseUrl), "User is not logged in successfully");
         Log.info("Log: The user login successfully in Salesforce Homepage");
     }
 
@@ -89,15 +91,20 @@ public class LoginPageStep {
 
     @Then("User searched for shortname {string} in offers page")
     public void userSearchedForShortnameInOffersPage(String shortName) throws InterruptedException {
-
         Reporter.log("Reporter.log is showing here");
         assert true;
     }
 
-    @And("Validate product name in offers page matches with Landing page")
+    @And("Validate product name in offers page matches with Landing page and quit")
     public void validate_product_name_in_offers_page_matches_with_landing_page() {
+        driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+        driver.quit();
         Log.info("Log: Validate product name in offers page matches with Landing page");
 
     }
 
+    @Given("print out driver quite")
+    public void printOutDriverQuite() {
+        System.out.println("Print: driver quit");
+    }
 }

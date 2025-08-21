@@ -4,6 +4,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import static utils.TestContextSetup.driver;
+
 public class TestNGListener implements ITestListener {
 
     // when the test suite was started, it will be triggered
@@ -42,6 +44,13 @@ public class TestNGListener implements ITestListener {
     // When the test suite is finished, it will trigger
     @Override
     public void onFinish(ITestContext context) {
+        //在 onFinish tu use quit() again to ensure exceptional condition, but this is not must condition.
+        if (driver != null) {
+            try {
+                driver.manage().deleteAllCookies(); // 可选
+            } catch (Exception ignored) {}
+        }
+        driver.quit();
         System.out.println("Test Suite Finished: " + context.getName());
     }
 }

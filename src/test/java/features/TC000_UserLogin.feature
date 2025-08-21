@@ -1,6 +1,6 @@
 Feature: Login Testing
 
-  @Login
+  @Login @Setup @Test
  Scenario Outline: Search product in Home/Landing Page to validate if it matches in ProductName Column from feature file
    Given User open Salesforce Homepage
    When User input Username "<Username>" and Password "<Password>" to login Salesforce Homepage
@@ -9,23 +9,20 @@ Feature: Login Testing
      |Username  | Password |
      |tracychrishu@mindful-unicorn-apdgty.com| asdfgh@1     |
 
-  @AdminLogin @Test
-  Scenario: Admin login Salesforce Homepage
-    Given User open Salesforce Homepage
-    When User input admin username and admin password
-    Then Validate user login successfully
-
-
-  @regression
+  @mockup
   Scenario Outline: Admin login Salesforce Homepage
     Given User open Salesforce Homepage
-    Then User searched for shortname "<Name>" in offers page
-    And Validate product name in offers page matches with Landing page
+    When User searched for shortname "<Name>" in offers page
+    Then Validate product name in offers page matches with Landing page and quit
     Examples:
       |Name  |
       |Tom|
       |Ban|
       |Beet|
+
+  @teardown @Test
+  Scenario: Print driver quit
+    Given print out driver quite
 
  # @regression @smoke
  #  Scenario: Open the GreenKart webpage, and I can find broccoli and apple carrot listed on the page.
